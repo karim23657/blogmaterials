@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RBC 3d</title>
+		<style>
+			body { margin: 0;
+                   font-family: Vazir;			}
+			.big{
+    width: 80%;
+    background-color: rgb(225, 182, 161);
+    position: absolute;
+    height: 100%;
+    margin: 0px 10%;
+    z-index: 10;
+}
+.small{
+width:100%;
+background-color:#e1b6a1;
+}
+#next,
+#prev {
+    color: #333;
+    display: inline-block;
+    font: normal bold 4em Vazir;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: auto;
+}
+
+#next,
+#prev { padding: 0.5em 1.5em }
+
+#next { text-align: right }
+
+#next:before,
+#next:after,
+#prev:before,
+#prev:after {
+    background: #333;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    content: "";
+    display: block;
+    height: 0.5em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1em;
+}
+
+#prev:before,
+#prev:after { left: 0 }
+
+#next:before,
+#prev:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#next:after,
+#prev:after {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#prev:after,
+#next:before { margin-top: -.36em }
+
+#next:hover,
+#next:focus,
+#prev:hover,
+#prev:focus { color:#c00;
+              background-color: #0444a82b; }
+
+#next:hover:before,
+#next:hover:after,
+#next:focus:before,
+#next:focus:after,
+#prev:hover:before,
+#prev:hover:after,
+#prev:focus:before,
+#prev:focus:after { background: #c00 }
+
+/* container styles  */
+
+nav { text-align: center }
+#loaderpage {
+  position: absolute;
+  z-index: 90000;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: #2196F3;
+  background: linear-gradient(to top left, #C4C24C -40%, #3121F3);
+  transition: 0.5s all linear;
+  top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+}
+#loaderpage.hiddenm {display:none;}
+#loaderpage.hidden {
+  opacity: 0;
+     -webkit-transform:  scale(10,10); /* Safari */
+  transform: scale(10,10);
+ 
+/*
+   -webkit-transform: rotateY(180deg); 
+  transform: rotateY(180deg);
+    -webkit-transform: rotateX(180deg); 
+  transform: rotateX(180deg);*/
+
+}
+.container {
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 250px;
+      height: 250px;
+      margin: auto;
+}
+
+.part {
+  width: 250px;
+  position: absolute;
+}
+
+.svgpath {
+  fill: rgba(145,220,90,0);
+  stroke: aqua;
+  stroke-width: 1.5px;
+  stroke-dasharray: 1000;
+  stroke-linecap: round;
+  z-index: 2;
+}
+
+.svgbg {
+  fill: rgba(255,255,255,0.2);
+  z-index: 1;
+ }
+
+#playload {
+  animation: dash 2.5s reverse ease-in-out infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 2000;
+  }
+}
+		</style>
+	</head>
+	<body>
+
+		<script src="../js/three.min.js"></script>
+		<script src="../js/OrbitControls.js"></script>
+		<script src="../js/fflate.min.js"></script>
+		<script src="../js/loaders/FBXLoader.js"></script>
+
+		
+		<script>
+			const scene = new THREE.Scene();
+			scene.background = new THREE.Color( 0xf1f1f1);
+			
+			// Add lights
+			var hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.61);
+			hemiLight.position.set(0, 10, 0);
+			scene.add(hemiLight);
+			
+			var d = 8.25;
+			var dirLight = new THREE.DirectionalLight(0xffffff, 0.54);
+			dirLight.position.set(-8, 12, 8);
+			dirLight.castShadow = true;
+			dirLight.shadow.mapSize = new THREE.Vector2(1024, 1024);
+			dirLight.shadow.camera.near = 0.1;
+			dirLight.shadow.camera.far = 1500;
+			dirLight.shadow.camera.left = d * -1;
+			dirLight.shadow.camera.right = d;
+			dirLight.shadow.camera.top = d;
+			dirLight.shadow.camera.bottom = d * -1;
+			// Add directional Light to scene
+			scene.add(dirLight);
+			
+			
+			// Frame rate
+			const clock = new THREE.Clock();
+			var delta = 0;
+			// 10 fps
+			var interval = 1 / 10;
+			
+			
+		
+			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+			const renderer = new THREE.WebGLRenderer({ antialias: true });
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			renderer.shadowMap.enabled = true;
+			document.body.appendChild( renderer.domElement );
+			
+			window.addEventListener( 'resize', onWindowResize );
+			
+			
+			const controls = new THREE.OrbitControls( camera, renderer.domElement );
+			controls.target.set( 0, 0, 0 );
+			controls.update();
+			
+			 pointerMesh = new THREE.Mesh(
+    	new THREE.SphereGeometry(0.05),
+      new THREE.MeshBasicMaterial({color: 'red'})
+    );
+    pointerMesh.position.set(0.6, 0, 0);
+    scene.add(pointerMesh);
+
+
+//fbx loader
+
+var model='';
+lololomodel();
+function lololomodel(){
+var loader = new THREE.FBXLoader();
+//loader.load( 'file:///C:/xampp/htdocs/myprojects/learn_test_develope/%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%DB%8C/dev/javascript/3d/load%20model/models/dancing_skeleton-fbx/Thriller%20Part%204.fbx', function ( object ) {
+loader.load( 'rbc4.fbx', function ( object ) {
+					   
+					    model=object;
+						//addBonescontroll();
+	/*
+						mixer = new THREE.AnimationMixer( object );
+						
+	
+						const action = mixer.clipAction( object.animations[ 0 ] );
+						action.play();
+						*/
+						//object.scale.set(50, 50, 50);
+						//object.position.y = -11;
+	
+						object.traverse( function ( child ) {
+	
+							if ( child.isMesh ) {
+							child.material.skinning =true;
+	
+								child.castShadow = true;
+								child.receiveShadow = true;
+	
+							}
+							});
+							 
+	
+						scene.add( object );
+						/*var rat=1/3.3;
+						object.scale.set(rat,rat,rat)*/
+						
+	
+					} 
+					
+					
+					);
+			camera.position.z = 25;
+			camera.position.y = 90;
+			camera.position.x = 140;
+			controls.update();
+			console.log('model loaded');
+			setTimeout(function(){document.getElementById("loaderpage").classList.add('hidden');
+			setTimeout(function(){document.getElementById("loaderpage").classList.add('hiddenm');}, 1000)}, 4000)
+			
+
+	}
+			
+
+			function onWindowResize() {
+	
+					camera.aspect = window.innerWidth / window.innerHeight;
+					camera.updateProjectionMatrix();
+	
+					renderer.setSize( window.innerWidth, window.innerHeight );
+	
+				}
+			const animate = function () {
+				requestAnimationFrame( animate );
+
+				delta += clock.getDelta();
+				if (delta  > interval) {
+				    //line.rotation.x += 0.01;
+					//line.rotation.y += 0.01;
+					
+					renderer.render( scene, camera );
+					
+					delta = delta % interval;
+				}
+			};
+
+			animate();
+			
+			
+			
+
+
+		
+		
+		</script>
+		
+		<script>
+		var ggglbl=["Cube","Cube001","Cube002","Cube004","Cube003","Plane003"];
+		var glblmj="Cube";
+		
+		function nextModel(){
+		    var kj=ggglbl.indexOf(glblmj)+1;
+			if(kj==ggglbl.length){
+			    kj=ggglbl.length-kj;
+			}
+			glblmj=ggglbl[kj];
+			setVievModel(glblmj);
+			}
+		function prevModel(){
+		    var kj=ggglbl.indexOf(glblmj)-1;
+			if(kj<0){
+			    kj=ggglbl.length+kj;
+			}
+			glblmj=ggglbl[kj];
+			setVievModel(glblmj);
+			}
+		function setVievModel(a){
+		var e=model.getObjectByName(a).position;
+		controls.target.set( e.x, e.y, e.z );
+		/*camera.position.z = 72//175.2;
+			camera.position.y = 131//170;*/
+			camera.position.x = e.x;
+			controls.update();}
+		</script>
+		<div style="position: fixed; bottom: 0px; left: 0px; cursor: pointer; opacity: 0.9; z-index: 10000;" id="prev" onclick="prevModel()">قبلی</div>
+		<div style="position: fixed; bottom: 0px; right: 0px; cursor: pointer; opacity: 0.9; z-index: 10000;"  id="next" onclick="nextModel()">بعدی</div>
+		<div id="loaderpage">
+<div class='container'>
+  <svg class='part' x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+    <path class="svgpath" id="playload" d="M189.5,140.5c-6.6,29.1-32.6,50.9-63.7,50.9c-36.1,0-65.3-29.3-65.3-65.3
+	c0,0,17,0,23.5,0c10.4,0,6.6-45.9,11-46c5.2-0.1,3.6,94.8,7.4,94.8c4.1,0,4.1-92.9,8.2-92.9c4.1,0,4.1,83,8.1,83
+	c4.1,0,4.1-73.6,8.1-73.6c4.1,0,4.1,63.9,8.1,63.9c4.1,0,4.1-53.9,8.1-53.9c4.1,0,4.1,44.1,8.2,44.1c4.1,0,3.1-34.5,7.2-34.5
+	c4.1,0,3.1,24.6,7.2,24.6c4.1,0,2.5-14.5,5.2-14.5c2.2,0,0.8,5.1,4.2,4.9c0.4,0,13.1,0,13.1,0c0-34.4-27.9-62.3-62.3-62.3
+	c-27.4,0-50.7,17.7-59,42.3" />
+
+    <path class="svgbg" d="M61,126c0,0,16.4,0,23,0c10.4,0,6.6-45.9,11-46c5.2-0.1,3.6,94.8,7.4,94.8c4.1,0,4.1-92.9,8.2-92.9
+	c4.1,0,4.1,83,8.1,83c4.1,0,4.1-73.6,8.1-73.6c4.1,0,4.1,63.9,8.1,63.9c4.1,0,4.1-53.9,8.1-53.9c4.1,0,4.1,44.1,8.2,44.1
+	c4.1,0,3.1-34.5,7.2-34.5c4.1,0,3.1,24.6,7.2,24.6c4.1,0,2.5-14.5,5.2-14.5c2.2,0,0.8,5.1,4.2,4.9c0.4,0,22.5,0,23,0" />
+     <style>
+    .small { font: italic 13px sans-serif; }
+    .heavy { font: bold 30px sans-serif; }
+
+    /* Note that the color of the text is set with the    *
+     * fill property, the color property is for HTML only */
+    .Rrrrr { font: italic 40px serif; fill: red; }
+  </style>
+
+  <text x="20" y="35" class="small">by</text>
+  <text x="40" y="25" class="heavy">Moustapha</text>
+ 
+  <text x="30" y="55" class="Rrrrr">Hosseini pour</text>
+  </svg>
+</div>
+</div>
+<script>
+function showPage() {
+      // Add the newly defined hidden class to the preloader element
+      document.getElementById("loaderpage").classList.add('hidden');
+	  setTimeout(function(){document.getElementById("loaderpage").classList.add('hiddenm');}, 1000)
+}
+setTimeout(function(){document.getElementById("loaderpage").onclick = function(){showPage()};}, 5000)
+
+</script>
+	</body>
+</html>

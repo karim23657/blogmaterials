@@ -1,13 +1,7 @@
 
 	@charset "UTF-8";
-	/* @font-face { */
-		/* font-family: "Source Serif Pro"; */
-		/* src: url(https://markmanson.net/wp-content/themes/mm-main/fonts/sourceserifpro-semiboldit-webfont.woff2) format("woff2"), url(https://markmanson.net/wp-content/themes/mm-main/fonts/sourceserifpro-semiboldit-webfont.woff) format("woff"), url(https://markmanson.net/wp-content/themes/mm-main/fonts/sourceserifpro-semiboldit-webfont.ttf) format("truetype"), url(https://markmanson.net/wp-content/themes/mm-main/fonts/sourceserifpro-semiboldit-webfont.svg#SourceSerifPro) format("svg"); */
-		/* font-weight: 600; */
-		/* font-style: italic; */
-		/* font-display: swap */
-	/* } */
 	
+
 	
 	/* @font-face {  */
 	    /* font-family: "Vazir";  */
@@ -2348,3 +2342,16 @@ blockquote footer {
  }
 }
 	
+
+
+
+
+
+
+
+section.light-section.content-section{
+  margin-bottom: 30px;
+  padding-bottom: 90px;
+  border-bottom: 1px solid #252121;
+}
+

@@ -8664,7 +8664,8 @@ li.mp_users_subscriptions_list_alt {
 .front-page .front-page__hero--alt .breakthrough__form .front-page__hero__breakthrough-title {
  font-size:24px;
  font-weight:800;
- line-height:1.5
+ line-height:1.5;
+ text-align: right;
 }
 .front-page .front-page__hero--alt .breakthrough__form .front-page__hero__breakthrough-title .circle-word-long {
  font-weight:700;

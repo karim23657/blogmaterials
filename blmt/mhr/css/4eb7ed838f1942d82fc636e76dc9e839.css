@@ -4061,10 +4061,11 @@ select,
 optgroup,
 textarea {
  color:#252121;
- font-family:"source serif pro",serif;
+ font-family:Vazir,serif;
  font-size:1rem;
  line-height:1.65
 }
+p,
 button,
 input {
  font-family:Vazir,sans-serif

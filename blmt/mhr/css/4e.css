@@ -4444,11 +4444,11 @@ blockquote {
  font-style:italic;
  font-weight:600;
  margin-bottom:1em;
- background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nNDgnIGhlaWdodD0nMzcnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZD0nTTUuMDMgMzIuOTMyQzIuMzI3IDMwLjA2Ljg3NSAyNi44NC44NzUgMjEuNjE4YzAtOS4xODcgNi40NS0xNy40MjIgMTUuODI5LTIxLjQ5M2wyLjM0NCAzLjYxN0MxMC4yOTQgOC40NzggOC41ODIgMTQuNjIyIDcuOSAxOC40OTdjMS40MS0uNzMgMy4yNTUtLjk4NCA1LjA2My0uODE2IDQuNzM2LjQzOCA4LjQ2OCA0LjMyNiA4LjQ2OCA5LjE1OWE5LjE4OCA5LjE4OCAwIDAgMS05LjE4NyA5LjE4N2MtMi44MTcgMC01LjUxLTEuMjg2LTcuMjE0LTMuMDk1em0yNi4yNSAwYy0yLjcwMy0yLjg3Mi00LjE1NS02LjA5Mi00LjE1NS0xMS4zMTQgMC05LjE4NyA2LjQ1LTE3LjQyMiAxNS44MjktMjEuNDkzbDIuMzQ0IDMuNjE3Yy04Ljc1NSA0LjczNi0xMC40NjYgMTAuODgtMTEuMTQ4IDE0Ljc1NSAxLjQxLS43MyAzLjI1NS0uOTg0IDUuMDYzLS44MTYgNC43MzYuNDM4IDguNDY4IDQuMzI2IDguNDY4IDkuMTU5YTkuMTg4IDkuMTg4IDAgMCAxLTkuMTg3IDkuMTg3Yy0yLjgxNyAwLTUuNTEtMS4yODYtNy4yMTQtMy4wOTV6JyBmaWxsPScjRjI2ODIyJy8+PC9zdmc+);
+ background-image:url("data:image/svg+xml,%3Csvg width='48' height='37' fill='none' style='transform: scale(-1, 1);' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.03 32.932C2.327 30.06.875 26.84.875 21.618c0-9.187 6.45-17.422 15.829-21.493l2.344 3.617C10.294 8.478 8.582 14.622 7.9 18.497c1.41-.73 3.255-.984 5.063-.816 4.736.438 8.468 4.326 8.468 9.159a9.188 9.188 0 0 1-9.187 9.187c-2.817 0-5.51-1.286-7.214-3.095zm26.25 0c-2.703-2.872-4.155-6.092-4.155-11.314 0-9.187 6.45-17.422 15.829-21.493l2.344 3.617c-8.755 4.736-10.466 10.88-11.148 14.755 1.41-.73 3.255-.984 5.063-.816 4.736.438 8.468 4.326 8.468 9.159a9.188 9.188 0 0 1-9.187 9.187c-2.817 0-5.51-1.286-7.214-3.095z' fill='%23F26822'/%3E%3C/svg%3E");
  background-repeat:no-repeat;
- background-position:top 11px left 8px;
+ background-position:top 11px right 8px;
  background-size:40px;
- padding-left:64px;
+ padding-right:64px;
  min-height:3em;
  display:flex;
  justify-content:center;
@@ -4496,7 +4496,7 @@ blockquote.blockquote-large footer cite {
  blockquote {
   font-size:20px;
   background-size:47px;
-  padding-left:80px
+  padding-right:80px;
  }
  .book-page__benefits-list blockquote footer,
  .book-page__benefits-list blockquote footer cite,
@@ -4704,7 +4704,7 @@ dd {
 .splat-list li,
 .article-content ul:not(.big-blocks) li,
 .orange-circle-list li {
- padding:0 0 0 26px;
+ padding:0 26px 0 0;
  margin-bottom:15px;
  position:relative
 }
@@ -4721,7 +4721,7 @@ dd {
  background-image:url(./list-orange-circle.svg);
  width:16px;
  height:16px;
- left:0;
+ right:0;
  top:.3em
 }
 .big-blocks ul.bordered-list li,
@@ -5064,7 +5064,7 @@ dd {
  counter-increment:item;
  margin-bottom:15px;
  position:relative;
- padding-left:3em
+ padding-right:3em
 }
 .site-main--page ol li:last-of-type,
 .site-main--page-with-hero ol li:last-of-type,
@@ -5085,7 +5085,7 @@ dd {
  display:inline-block;
  width:2em;
  position:absolute;
- left:0
+ right:0
 }
 .site-main--page ol.pill-list,
 .site-main--page-with-hero ol.pill-list,
@@ -5525,7 +5525,7 @@ textarea:focus {
   text-align:right;
   border:none;
   padding:0;
-  height:14px;
+  height:30px;
   margin-bottom:20px
  }
 }
@@ -7506,7 +7506,7 @@ li.mp_users_subscriptions_list_alt {
  .single-post article aside,
  .single-newsletters article aside {
   flex:0 1 312px;
-  padding-left:32px;
+  padding-right:32px;
   padding-top:120px;
   display:flex;
   flex-direction:column;
@@ -7669,7 +7669,7 @@ li.mp_users_subscriptions_list_alt {
  font-size:14px;
  text-transform:lowercase;
  display:inline-block;
- margin-right:3px
+ margin-left:3px
 }
 .article-content .entry-header .entry-meta .entry-meta__sent-on {
  text-transform:initial
@@ -7754,11 +7754,11 @@ li.mp_users_subscriptions_list_alt {
  }
 }
 .article-content blockquote {
- margin:32px 0
+ margin:32px 0;
 }
 @media(min-width:680px) {
  .article-content blockquote {
-  margin:40px 0 40px 33px
+  margin:40px 33px 40px 0;
  }
 }
 .article-content ul.big-blocks {
@@ -12097,4 +12097,11 @@ body.modal-active {
 
 .promo-container.promo-container.green-background {
   background-color: #d8f222;
+}
+
+
+section.light-section.content-section{
+  margin-bottom: 30px;
+  padding-bottom: 90px;
+  border-bottom: 1px solid #252121;
 }

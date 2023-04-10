@@ -3904,15 +3904,15 @@ html {
 }
 .warning-message--success,
 .toast-notification--success {
- background-image:url(/wp-content/themes/mm-main/images/icons/checkmark-black-circle.svg)
+ background-image:url(./checkmark-black-circle.svg)
 }
 .warning-message--success-password,
 .toast-notification--success-password {
- background-image:url(/wp-content/themes/mm-main/images/icons/shield-black.svg)
+ background-image:url(./shield-black.svg)
 }
 .warning-message--error,
 .toast-notification--error {
- background-image:url(/wp-content/themes/mm-main/images/icons/warning-red.svg)
+ background-image:url(./warning-red.svg)
 }
 .warning-message.warning-message,
 .warning-message--info,
@@ -3920,7 +3920,7 @@ html {
 .warning-message.toast-notification,
 .toast-notification--info {
  background-color:#dae5e6;
- background-image:url(/wp-content/themes/mm-main/images/icons/info.svg)
+ background-image:url(./info.svg)
 }
 .circle-word,
 .circle-word-long {
@@ -3939,7 +3939,7 @@ html {
  right:0;
  top:0;
  bottom:0;
- background-image:url(/wp-content/themes/mm-main/images/circle-word.svg);
+ background-image:url(./circle-word.svg);
  background-repeat:no-repeat;
  background-position:center;
  background-size:100% 100%
@@ -3950,7 +3950,7 @@ html {
  margin-bottom:-10px
 }
 .circle-word-long::before {
- background-image:url(/wp-content/themes/mm-main/images/circle-word-long.svg)
+ background-image:url(./circle-word-long.svg)
 }
 .highlight--text-bubble,
 .highlight--star,
@@ -3975,17 +3975,17 @@ html {
 .highlight--text-bubble.highlight--text-bubble,
 .highlight--star.highlight--text-bubble,
 .highlight--pin.highlight--text-bubble {
- background-image:url(/wp-content/themes/mm-main/images/icons/bubble.svg)
+ background-image:url(./bubble.svg)
 }
 .highlight--text-bubble.highlight--star,
 .highlight--star.highlight--star,
 .highlight--pin.highlight--star {
- background-image:url(/wp-content/themes/mm-main/images/icons/star.svg)
+ background-image:url(./star.svg)
 }
 .highlight--text-bubble.highlight--pin,
 .highlight--star.highlight--pin,
 .highlight--pin.highlight--pin {
- background-image:url(/wp-content/themes/mm-main/images/icons/pin.svg)
+ background-image:url(./pin.svg)
 }
 .custom-checkbox-label.custom-checkbox-label {
  position:relative;
@@ -4256,7 +4256,7 @@ h6 {
 .slanted-header::before {
  content:"";
  position:absolute;
- background-image:url(/wp-content/themes/mm-main/images/icons/list-orange-circle.svg);
+ background-image:url(./list-orange-circle.svg);
  width:16px;
  height:16px;
  left:0;
@@ -4718,7 +4718,7 @@ dd {
 .orange-circle-list li::before {
  content:"";
  position:absolute;
- background-image:url(/wp-content/themes/mm-main/images/icons/list-orange-circle.svg);
+ background-image:url(./list-orange-circle.svg);
  width:16px;
  height:16px;
  left:0;
@@ -4787,7 +4787,7 @@ dd {
 .orange-circle-list ul li::before {
  content:"";
  position:absolute;
- background-image:url(/wp-content/themes/mm-main/images/icons/ellipse-orange.svg);
+ background-image:url(./ellipse-orange.svg);
  width:16px;
  height:16px;
  background-size:contain;
@@ -4812,7 +4812,7 @@ dd {
 .splat-list ul ul li::before,
 .article-content ul:not(.big-blocks) ul ul li::before,
 .orange-circle-list ul ul li::before {
- background-image:url(/wp-content/themes/mm-main/images/icons/line-orange.svg);
+ background-image:url(./line-orange.svg);
  width:1px;
  height:16px;
  left:0;
@@ -5424,7 +5424,7 @@ textarea:focus {
  width:20px;
  margin-right:3px;
  background-size:contain;
- background-image:url(/wp-content/themes/mm-main/images/icons/close.svg)
+ background-image:url(./close.svg)
 }
 .logged-in .nav-login-link,
 .logged-in .nav-subscribe-link {
@@ -5695,7 +5695,7 @@ textarea:focus {
  top:20px;
  width:10px;
  height:6px;
- background-image:url(/wp-content/themes/mm-main/images/icons/caret-closed.svg);
+ background-image:url(./caret-closed.svg);
  background-repeat:no-repeat;
  background-size:contain;
  pointer-events:none
@@ -5927,7 +5927,7 @@ textarea:focus {
  border-top:1px solid #252121;
  padding-top:30px;
  padding-bottom:30px;
- background-image:url(/wp-content/themes/mm-main/images/circle-background-top-left.svg);
+ background-image:url(./circle-background-top-left.svg);
  background-repeat:no-repeat;
  background-position:top left
 }
@@ -5968,7 +5968,7 @@ textarea:focus {
 }
 @media(min-width:680px) {
  .book-chapter-download {
-  background-image:url(/wp-content/themes/mm-main/images/circle-background-bottom-left.svg);
+  background-image:url(./circle-background-bottom-left.svg);
   background-repeat:no-repeat;
   background-position:bottom left
  }
@@ -6261,16 +6261,16 @@ textarea:focus {
  }
 }
 .risk-free-list-container.risk-free-list-container.risk-free-list-container ul li.li-cancel::before {
- background-image:url(/wp-content/themes/mm-main/images/icons/timer-orange.svg)
+ background-image:url(./timer-orange.svg)
 }
 .risk-free-list-container.risk-free-list-container.risk-free-list-container ul li.li-moneyback::before {
- background-image:url(/wp-content/themes/mm-main/images/icons/shield-orange.svg)
+ background-image:url(./shield-orange.svg)
 }
 .risk-free-list-container.risk-free-list-container.risk-free-list-container ul li.li-secure::before {
- background-image:url(/wp-content/themes/mm-main/images/icons/card-orange.svg)
+ background-image:url(./card-orange.svg)
 }
 .risk-free-list-container.risk-free-list-container.risk-free-list-container ul li.li-customer-support::before {
- background-image:url(/wp-content/themes/mm-main/images/icons/smile-orange.svg)
+ background-image:url(./smile-orange.svg)
 }
 .sign-up-container h3 {
  margin:0 0 10px
@@ -6718,7 +6718,7 @@ li.mp_users_subscriptions_list_alt {
  width:0;
  height:0;
  position:absolute;
- background-image:url(/wp-content/themes/mm-main/images/icons/arrow-right-black.svg)
+ background-image:url(./arrow-right-black.svg)
 }
 .checkout-page .have-coupon-link {
  display:none
@@ -7043,7 +7043,7 @@ li.mp_users_subscriptions_list_alt {
 }
 .checkout-page .mepr-submit-container::after {
  content:"";
- background-image:url(/wp-content/themes/mm-main/images/icons/arrow-right-white.svg);
+ background-image:url(./arrow-right-white.svg);
  width:17.5px;
  height:10px;
  display:block;
@@ -7055,7 +7055,7 @@ li.mp_users_subscriptions_list_alt {
  pointer-events:none
 }
 .checkout-page .mepr-submit-container:hover::after {
- background-image:url(/wp-content/themes/mm-main/images/icons/arrow-right-black.svg)
+ background-image:url(./arrow-right-black.svg)
 }
 .checkout-footer {
  display:flex;
@@ -7998,7 +7998,7 @@ li.mp_users_subscriptions_list_alt {
  }
 }
 .archives.course-archives .course-card.completed-course .course-card__progress-title {
- background-image:url(/wp-content/themes/mm-main/images/icons/thumbs-up.svg);
+ background-image:url(./thumbs-up.svg);
  background-repeat:no-repeat;
  background-position:left center;
  background-size:16px;
@@ -8149,7 +8149,7 @@ li.mp_users_subscriptions_list_alt {
  border-bottom:1px solid #f26822
 }
 .site-main.course-category .entry-header--course-category .course-progress.completed-course .course-progress__title {
- background-image:url(/wp-content/themes/mm-main/images/icons/thumbs-up.svg);
+ background-image:url(./thumbs-up.svg);
  background-repeat:no-repeat;
  background-position:left center;
  background-size:16px;
@@ -8283,13 +8283,13 @@ li.mp_users_subscriptions_list_alt {
  position:absolute
 }
 .site-main.course-category .entry-content--course-category .lessons-list__lesson-duration .lessons-list__video-duration::before {
- background:url(/wp-content/themes/mm-main/images/icons/video.svg) no-repeat left
+ background:url(./video.svg) no-repeat left
 }
 .site-main.course-category .entry-content--course-category .lessons-list__lesson-duration .lessons-list__reading-time::before {
- background:url(/wp-content/themes/mm-main/images/icons/reading.svg) no-repeat left
+ background:url(./reading.svg) no-repeat left
 }
 .site-main.course-category .entry-content--course-category .lessons-list__lesson-duration .lessons-list__exercise-time::before {
- background:url(/wp-content/themes/mm-main/images/icons/exercise.svg) no-repeat left
+ background:url(./exercise.svg) no-repeat left
 }
 @media(max-width:1023px) {
  .all-courses {
@@ -8310,7 +8310,7 @@ li.mp_users_subscriptions_list_alt {
   padding:16px 16px 16px 42px;
   cursor:pointer;
   background-repeat:no-repeat;
-  background-image:url(/wp-content/themes/mm-main/images/icons/menu-list.svg);
+  background-image:url(./menu-list.svg);
   background-position:left 16px center
  }
  .all-courses .all-courses__list {
@@ -8328,7 +8328,7 @@ li.mp_users_subscriptions_list_alt {
   border-radius:15px
  }
  .all-courses.show-all-courses .all-courses__title {
-  background-image:url(/wp-content/themes/mm-main/images/icons/menu-list.svg),url(/wp-content/themes/mm-main/images/icons/menu-close.svg);
+  background-image:url(./menu-list.svg),url(./menu-close.svg);
   background-position:left 16px center,right 16px center
  }
  .all-courses.show-all-courses .all-courses__list {
@@ -8570,7 +8570,7 @@ li.mp_users_subscriptions_list_alt {
 }
 @media(min-width:680px) {
  .front-page .front-page__hero .front-page__content {
-  background-image:url(/wp-content/themes/mm-main/images/front-page-hero-background-left.png),url(/wp-content/themes/mm-main/images/front-page-hero-background-right.png);
+  background-image:url(./front-page-hero-background-left.png),url(./front-page-hero-background-right.png);
   background-size:230px,230px;
   background-repeat:no-repeat;
   background-position:left -90px center,right -90px center
@@ -9357,13 +9357,13 @@ li.mp_users_subscriptions_list_alt {
  display:none
 }
 .book-page__international-editions .print-edition .edition-links {
- background-image:url(/wp-content/themes/mm-main/images/icons/print-edition-icon.svg)
+ background-image:url(./print-edition-icon.svg)
 }
 .book-page__international-editions .ebook-edition .edition-links {
- background-image:url(/wp-content/themes/mm-main/images/icons/ebook-edition-icon.svg)
+ background-image:url(./ebook-edition-icon.svg)
 }
 .book-page__international-editions .audio-edition .edition-links {
- background-image:url(/wp-content/themes/mm-main/images/icons/audio-edition-icon.svg)
+ background-image:url(./audio-edition-icon.svg)
 }
 @media(max-width:679px) {
  .book-page__international-editions .book-page__international-editions-list .list-header {
@@ -9422,7 +9422,7 @@ li.mp_users_subscriptions_list_alt {
  color:#252121
 }
 .book-page--everything-is-fucked blockquote {
- background-image:url(/wp-content/themes/mm-main/images/icons/quotation-mark-eif.svg)
+ background-image:url(./quotation-mark-eif.svg)
 }
 .book-page--everything-is-fucked .book-page__buy {
  background-color:#01afb5
@@ -9435,10 +9435,10 @@ li.mp_users_subscriptions_list_alt {
 .book-page--everything-is-fucked .book-page__buy .button--tertiary:active,
 .book-page--everything-is-fucked .book-page__buy .button--tertiary:focus,
 .book-page--everything-is-fucked .book-page__buy .button--tertiary:hover {
- background-image:url(/wp-content/themes/mm-main/images/icons/tertiary-eif.svg)
+ background-image:url(./tertiary-eif.svg)
 }
 .book-page--everything-is-fucked .book-page__benefits-list li::before {
- background-image:url(/wp-content/themes/mm-main/images/icons/list-circle-eif.svg)
+ background-image:url(./list-circle-eif.svg)
 }
 .book-page--will .accent-fill {
  fill:#e3b200
@@ -9447,7 +9447,7 @@ li.mp_users_subscriptions_list_alt {
  color:#252121
 }
 .book-page--will blockquote {
- background-image:url(/wp-content/themes/mm-main/images/icons/quotation-mark-will.svg)
+ background-image:url(./quotation-mark-will.svg)
 }
 .book-page--will .book-page__buy {
  background-color:#e3b200
@@ -9460,10 +9460,10 @@ li.mp_users_subscriptions_list_alt {
 .book-page--will .book-page__buy .button--tertiary:active,
 .book-page--will .book-page__buy .button--tertiary:focus,
 .book-page--will .book-page__buy .button--tertiary:hover {
- background-image:url(/wp-content/themes/mm-main/images/icons/tertiary-will.svg)
+ background-image:url(./tertiary-will.svg)
 }
 .book-page--will .book-page__benefits-list li::before {
- background-image:url(/wp-content/themes/mm-main/images/icons/list-circle-will.svg)
+ background-image:url(./list-circle-will.svg)
 }
 .book-page--love-is-not-enough-audiobook .accent-fill {
  fill:#ff1f1f
@@ -9472,7 +9472,7 @@ li.mp_users_subscriptions_list_alt {
  color:#252121
 }
 .book-page--love-is-not-enough-audiobook blockquote {
- background-image:url(/wp-content/themes/mm-main/images/icons/quotation-mark-love-is-not-enough.svg)
+ background-image:url(./quotation-mark-love-is-not-enough.svg)
 }
 .book-page--love-is-not-enough-audiobook .book-page__buy {
  background-color:#ff1f1f
@@ -9485,10 +9485,10 @@ li.mp_users_subscriptions_list_alt {
 .book-page--love-is-not-enough-audiobook .book-page__buy .button--tertiary:active,
 .book-page--love-is-not-enough-audiobook .book-page__buy .button--tertiary:focus,
 .book-page--love-is-not-enough-audiobook .book-page__buy .button--tertiary:hover {
- background-image:url(/wp-content/themes/mm-main/images/icons/tertiary-love-is-not-enough.svg)
+ background-image:url(./tertiary-love-is-not-enough.svg)
 }
 .book-page--love-is-not-enough-audiobook .book-page__benefits-list li::before {
- background-image:url(/wp-content/themes/mm-main/images/icons/list-circle-love-is-not-enough.svg)
+ background-image:url(./list-circle-love-is-not-enough.svg)
 }
 .book-page--models .accent-fill {
  fill:#af3b43
@@ -9497,7 +9497,7 @@ li.mp_users_subscriptions_list_alt {
  color:#252121
 }
 .book-page--models blockquote {
- background-image:url(/wp-content/themes/mm-main/images/icons/quotation-mark-models.svg)
+ background-image:url(./quotation-mark-models.svg)
 }
 .book-page--models .book-page__buy {
  background-color:#af3b43
@@ -9510,10 +9510,10 @@ li.mp_users_subscriptions_list_alt {
 .book-page--models .book-page__buy .button--tertiary:active,
 .book-page--models .book-page__buy .button--tertiary:focus,
 .book-page--models .book-page__buy .button--tertiary:hover {
- background-image:url(/wp-content/themes/mm-main/images/icons/tertiary-models.svg)
+ background-image:url(./tertiary-models.svg)
 }
 .book-page--models .book-page__benefits-list li::before {
- background-image:url(/wp-content/themes/mm-main/images/icons/list-circle-models.svg)
+ background-image:url(./list-circle-models.svg)
 }
 .course-lesson-links,
 .breadcrumbs,
@@ -9646,14 +9646,14 @@ li.mp_users_subscriptions_list_alt {
  display:block
 }
 .course-lesson-links .previous {
- background-image:url(/wp-content/themes/mm-main/images/icons/caret-left.svg);
+ background-image:url(./caret-left.svg);
  background-repeat:no-repeat;
  background-position:left;
  padding-left:22px;
  margin-right:30px
 }
 .course-lesson-links .next {
- background-image:url(/wp-content/themes/mm-main/images/icons/caret-right.svg);
+ background-image:url(./caret-right.svg);
  background-repeat:no-repeat;
  background-position:right;
  padding-right:22px
@@ -9681,7 +9681,7 @@ li.mp_users_subscriptions_list_alt {
  font-size:14px;
  margin-bottom:16px;
  padding-left:24px;
- background-image:url(/wp-content/themes/mm-main/images/icons/course-duration.svg);
+ background-image:url(./course-duration.svg);
  background-repeat:no-repeat;
  background-position:left top 3px
 }
@@ -9699,16 +9699,16 @@ li.mp_users_subscriptions_list_alt {
  background-color:#dae5e6
 }
 .course-playlist .course-playlist__lesson.course-playlist__lesson--video {
- background-image:url(/wp-content/themes/mm-main/images/icons/video.svg)
+ background-image:url(./video.svg)
 }
 .course-playlist .course-playlist__lesson.course-playlist__lesson--exercise {
- background-image:url(/wp-content/themes/mm-main/images/icons/exercise.svg)
+ background-image:url(./exercise.svg)
 }
 .course-playlist .course-playlist__lesson.course-playlist__lesson--reading {
- background-image:url(/wp-content/themes/mm-main/images/icons/reading.svg)
+ background-image:url(./reading.svg)
 }
 .course-playlist .course-playlist__lesson.course-playlist__lesson--completed {
- background-image:url(/wp-content/themes/mm-main/images/icons/completed.svg);
+ background-image:url(./completed.svg);
  background-size:18px;
  background-position:left 4px center
 }
@@ -9789,7 +9789,7 @@ li.mp_users_subscriptions_list_alt {
  border-top:1px solid #f26822;
  border-bottom:1px solid #f26822;
  padding:8px 16px 8px 38px;
- background-image:url(/wp-content/themes/mm-main/images/icons/lightning-bulb.svg);
+ background-image:url(./lightning-bulb.svg);
  background-repeat:no-repeat;
  background-position:left 13px center;
  margin-top:16px;
@@ -10691,7 +10691,7 @@ li.mp_users_subscriptions_list_alt {
  content:"";
  width:15px;
  height:15px;
- background-image:url(/wp-content/themes/mm-main/images/icons/play.svg);
+ background-image:url(./play.svg);
  position:absolute;
  left:0;
  background-position:center;
@@ -10818,7 +10818,7 @@ li.mp_users_subscriptions_list_alt {
  position:absolute;
  width:30px;
  height:30px;
- background-image:url(/wp-content/themes/mm-main/images/icons/play-white.svg);
+ background-image:url(./play-white.svg);
  background-size:12px;
  background-repeat:no-repeat;
  background-position:center;
@@ -10826,7 +10826,7 @@ li.mp_users_subscriptions_list_alt {
  top:0
 }
 .single-book-commentaries .mejs-container .mejs-inner .mejs-controls .mejs-playpause-button.mejs-pause button::before {
- background-image:url(/wp-content/themes/mm-main/images/icons/pause-white.svg)
+ background-image:url(./pause-white.svg)
 }
 .content-box--best-books.content-box--best-books h3:first-of-type {
  margin:0;
@@ -11152,12 +11152,12 @@ input[type=submit]:hover,
  height:24px
 }
 .delete-button {
- background-image:url(/wp-content/themes/mm-main/images/icons/delete.svg)
+ background-image:url(./delete.svg)
 }
 .delete-button:active,
 .delete-button:focus,
 .delete-button:hover {
- background-image:url(/wp-content/themes/mm-main/images/icons/delete.svg);
+ background-image:url(./delete.svg);
  text-decoration:underline
 }
 .button--tertiary-light {
@@ -11217,53 +11217,53 @@ input[type=submit]:hover,
  }
 }
 .button--twitter {
- background-image:url(/wp-content/themes/mm-main/images/icons/twitter-circle.svg)
+ background-image:url(./twitter-circle.svg)
 }
 .button--twitter:active,
 .button--twitter:focus,
 .button--twitter:hover {
- background-image:url(/wp-content/themes/mm-main/images/icons/twitter-circle.svg);
+ background-image:url(./twitter-circle.svg);
  text-decoration:underline
 }
 .button--whatsapp {
- background-image:url(/wp-content/themes/mm-main/images/icons/whatsapp-circle.svg)
+ background-image:url(./whatsapp-circle.svg)
 }
 .button--whatsapp:active,
 .button--whatsapp:focus,
 .button--whatsapp:hover {
- background-image:url(/wp-content/themes/mm-main/images/icons/whatsapp-circle.svg);
+ background-image:url(./whatsapp-circle.svg);
  text-decoration:underline
 }
 .button--linkedin {
- background-image:url(/wp-content/themes/mm-main/images/icons/linkedin-circle.svg)
+ background-image:url(./linkedin-circle.svg)
 }
 .button--linkedin:active,
 .button--linkedin:focus,
 .button--linkedin:hover {
- background-image:url(/wp-content/themes/mm-main/images/icons/linkedin-circle.svg);
+ background-image:url(./linkedin-circle.svg);
  text-decoration:underline
 }
 .button--facebook {
- background-image:url(/wp-content/themes/mm-main/images/icons/facebook-f-circle.svg)
+ background-image:url(./facebook-f-circle.svg)
 }
 .button--facebook:active,
 .button--facebook:focus,
 .button--facebook:hover {
- background-image:url(/wp-content/themes/mm-main/images/icons/facebook-f-circle.svg);
+ background-image:url(./facebook-f-circle.svg);
  text-decoration:underline
 }
 .button--pinterest {
- background-image:url(/wp-content/themes/mm-main/images/icons/pinterest-circle.svg)
+ background-image:url(./pinterest-circle.svg)
 }
 .button--pinterest:active,
 .button--pinterest:focus,
 .button--pinterest:hover {
- background-image:url(/wp-content/themes/mm-main/images/icons/pinterest-circle.svg);
+ background-image:url(./pinterest-circle.svg);
  text-decoration:underline
 }
 .download-report-box .button--download,
 .download-button {
- background:transparent url(/wp-content/themes/mm-main/images/icons/download-in-black-circle.svg) no-repeat center left
+ background:transparent url(./download-in-black-circle.svg) no-repeat center left
 }
 .download-report-box .button--download:active,
 .download-report-box .button--download:focus,
@@ -11271,7 +11271,7 @@ input[type=submit]:hover,
 .download-button:active,
 .download-button:focus,
 .download-button:hover {
- background:transparent url(/wp-content/themes/mm-main/images/icons/download-in-orange-circle.svg) no-repeat center left
+ background:transparent url(./download-in-orange-circle.svg) no-repeat center left
 }
 .download-report-box .button--download::after,
 .download-button::after {
@@ -11280,7 +11280,7 @@ input[type=submit]:hover,
  height:1px;
  opacity:0;
  position:absolute;
- background-image:url(/wp-content/themes/mm-main/images/icons/download-in-orange-circle.svg)
+ background-image:url(./download-in-orange-circle.svg)
 }
 .delete-answers.button--delete {
  background-color:#ea1414;
@@ -11291,7 +11291,7 @@ input[type=submit]:hover,
 }
 .delete-answers.button--delete::before {
  content:"";
- background-image:url(/wp-content/themes/mm-main/images/icons/delete-white-fill.svg);
+ background-image:url(./delete-white-fill.svg);
  background-repeat:no-repeat;
  width:13px;
  height:13px;
@@ -11304,7 +11304,7 @@ input[type=submit]:hover,
  color:#fff
 }
 .course-navigation-button {
- background:#fff url(/wp-content/themes/mm-main/images/icons/menu-hamburger-rounded.svg) no-repeat center left;
+ background:#fff url(./menu-hamburger-rounded.svg) no-repeat center left;
  width:100%;
  border-radius:0;
  padding:5px 0 5px 50px;
@@ -11319,7 +11319,7 @@ input[type=submit]:hover,
 .course-navigation-button:active,
 .course-navigation-button:focus,
 .course-navigation-button:hover {
- background:#fff url(/wp-content/themes/mm-main/images/icons/menu-hamburger-rounded.svg) no-repeat center left;
+ background:#fff url(./menu-hamburger-rounded.svg) no-repeat center left;
  text-decoration:underline;
  padding:5px 0 5px 50px;
  background-position:center right 24px
@@ -11337,7 +11337,7 @@ input[type=submit]:hover,
  font-weight:700;
  font-size:24px;
  padding-top:16px;
- background:#f5f5f5 url(/wp-content/themes/mm-main/images/icons/menu-close.svg) no-repeat right top;
+ background:#f5f5f5 url(./menu-close.svg) no-repeat right top;
  display:block;
  text-decoration:none;
  overflow:hidden;
@@ -11345,7 +11345,7 @@ input[type=submit]:hover,
 }
 .back-button,
 .cancel-modal {
- background:transparent url(/wp-content/themes/mm-main/images/icons/white-left-arrow-in-black-circle.svg) no-repeat center left
+ background:transparent url(./white-left-arrow-in-black-circle.svg) no-repeat center left
 }
 .back-button:active,
 .back-button:focus,
@@ -11353,7 +11353,7 @@ input[type=submit]:hover,
 .cancel-modal:active,
 .cancel-modal:focus,
 .cancel-modal:hover {
- background:transparent url(/wp-content/themes/mm-main/images/icons/white-left-arrow-in-orange-circle.svg) no-repeat center left
+ background:transparent url(./white-left-arrow-in-orange-circle.svg) no-repeat center left
 }
 .menu-toggle {
  background:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjQnIGhlaWdodD0nMTQnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZmlsbC1ydWxlPSdldmVub2RkJyBjbGlwLXJ1bGU9J2V2ZW5vZGQnIGQ9J00yNCAxLjVIMHYtMWgyNHYxem0wIDZIMHYtMWgyNHYxem0tMjQgNmgyNHYtMUgwdjF6JyBmaWxsPScjMjUyMTIxJy8+PC9zdmc+) no-repeat center right;
@@ -11379,7 +11379,7 @@ input[type=submit]:hover,
 }
 .button--completed::before {
  content:"";
- background-image:url(/wp-content/themes/mm-main/images/icons/thumbs-up.svg);
+ background-image:url(./thumbs-up.svg);
  background-repeat:no-repeat;
  width:18px;
  height:16px;
@@ -11510,7 +11510,7 @@ input[type=submit]:hover,
  padding:0;
  width:20px;
  height:20px;
- background-image:url(/wp-content/themes/mm-main/images/icons/reset.svg);
+ background-image:url(./reset.svg);
  background-repeat:no-repeat;
  background-color:transparent;
  border:none;
@@ -11532,18 +11532,18 @@ input[type=submit]:hover,
  background-position:center
 }
 .start-button {
- background-image:url(/wp-content/themes/mm-main/images/icons/play-small-white.svg);
+ background-image:url(./play-small-white.svg);
  background-position:right 9px center
 }
 .pause-button {
- background-image:url(/wp-content/themes/mm-main/images/icons/pause-small-white.svg)
+ background-image:url(./pause-small-white.svg)
 }
 .plus-button.plus-button {
- background-image:url(/wp-content/themes/mm-main/images/icons/plus.svg)
+ background-image:url(./plus.svg)
 }
 .minus-button {
  background-color:#fff;
- background-image:url(/wp-content/themes/mm-main/images/icons/minus.svg);
+ background-image:url(./minus.svg);
  width:20px;
  height:20px
 }
@@ -11582,7 +11582,7 @@ input[type=submit]:hover,
  content:"";
  position:absolute;
  right:0;
- background-image:url(/wp-content/themes/mm-main/images/icons/expand.svg);
+ background-image:url(./expand.svg);
  width:24px;
  height:24px;
  background-repeat:no-repeat;
@@ -11591,7 +11591,7 @@ input[type=submit]:hover,
  pointer-events:none
 }
 .faq .faq-question.active::after {
- background-image:url(/wp-content/themes/mm-main/images/icons/collapse.svg)
+ background-image:url(./collapse.svg)
 }
 .faq .faq-answer {
  display:none;
@@ -11697,7 +11697,7 @@ a.fn-text img {
 .modal::before {
  position:absolute;
  content:"";
- background-image:url(/wp-content/themes/mm-main/images/icons/warning.svg);
+ background-image:url(./warning.svg);
  top:40px;
  right:0;
  background-repeat:no-repeat;
